@@ -82,10 +82,10 @@ class MainActivity : AppCompatActivity() {
             val smsNum = phoneNumEdt.text.toString()
 
 //            URI 필요함
-            val Uri = Uri.parse("smsto:${smsNum}")
+            val myUri = Uri.parse("smsto:${smsNum}")
 
 //            Intent -> action + URI 전달
-            val myIntent= Intent(Intent.ACTION_SENDTO)
+            val myIntent= Intent(Intent.ACTION_SENDTO, myUri)
             startActivity(myIntent)
 
         }
