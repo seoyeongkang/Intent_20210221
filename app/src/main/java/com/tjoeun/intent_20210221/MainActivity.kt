@@ -17,5 +17,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
 
         }
+
+        sendContentBtn.setOnClickListener {
+
+//            입력한 문구를 String으로 추출 (저장)
+            val inputContent = contentEdt.text.toString()
+
+//            두번째 화면 (SecondActivity)으로 => inputContent의 값을 들고 => 이동
+
+
+
+        }
     }
 }
