@@ -20,7 +20,7 @@ class SecondActivity : AppCompatActivity() {
 
 //        첨부된 출생년도 받는 예시 => Int, Double, Boolean 등 기본형(에 가까운) 변수들은,
 //        첨부가 안됐을떼 뭘로 꺼낼지 기본값 지정 필요
-        val myBirthYear = intent.getIntExtra("출생연도", defaultValue:0)
+        //val myBirthYear = intent.getIntExtra("출생연도", defaultValue:0)
 
 
     }
