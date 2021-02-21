@@ -70,11 +70,23 @@ class MainActivity : AppCompatActivity() {
         callBtn.setOnClickListener {
 
             val phonenum = phoneNumEdt.text.toString()
-
             val myUri = Uri.parse("tel:${phonenum}")
-
             val myIntent2 = Intent(Intent.ACTION_CALL, myUri)
             startActivity(myIntent2)
+
+        }
+
+        smsBtn.setOnClickListener {
+
+//            폰번 필요함
+            val smsNum = phoneNumEdt.text.toString()
+
+//            URI 필요함
+            val Uri = Uri.parse("smsto:${smsNum}")
+
+//            Intent -> action + URI 전달
+            val myIntent= Intent(Intent.ACTION_SENDTO)
+            startActivity(myIntent)
 
         }
     }
